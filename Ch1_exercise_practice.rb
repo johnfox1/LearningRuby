@@ -1,13 +1,13 @@
 # Trying to re-create the Ch1 exercise, without hints or looking
 # Trying to make the code and game as clean & slim as possible
-# Trying to eliminate any hardcoding of game parameters
+# Trying to eliminate hardcoding of game parameters
 # 25th August 2022
 
 # Game parameters
 target_number_min = 1
 target_number_max = 20
 target_number = rand(target_number_min..target_number_max)
-puts "#{target_number}" #just for testing purposes
+puts "#{target_number}" #just for testing purposes, remove when playing
 num_allowed_guesses = 3
 num_guesses = 0
 num_guesses_remaining = num_allowed_guesses - num_guesses
@@ -25,7 +25,7 @@ while guess_correct == false && num_guesses < num_allowed_guesses
 
   num_guesses += 1
   puts "This is guess number #{num_guesses} out of #{num_allowed_guesses} allowed guesses."
-  print "What is your guess? "
+  print "What's your guess? "
   player_guess = gets.to_i
 
     # Comparing the guess to the target
