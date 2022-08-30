@@ -43,28 +43,28 @@ puts "This car averages #{lifetime_mileage} MPG."
 # Exercise to create a class, and then an instance (object) based on the Class
 
 class Bird
-  def talk
-    puts "Chirp Chirp"
+  def talk(name)
+    puts "#{name} says Chirp Chirp"
   end
-  def move(destination)
-    puts "Flying to the #{destination}."
+  def move(name, destination)
+    puts "#{name} flies to the #{destination}."
   end
 end
 
 class Dog
-  def talk
-    puts "Woof"
+  def talk(name)
+    puts "#{name} says Whoof Whoof"
   end
-  def move(destination)
-    puts "Running to the #{destination}."
+  def move(name, destination)
+    puts "#{name} is running to the #{destination}."
   end
 end
 
 bird = Bird.new
 dog = Dog.new
 
-bird.talk
-bird.move("tree")
+bird.talk("Jim")
+bird.move("Rufus", "tree")
 
     
 
