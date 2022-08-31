@@ -1,4 +1,4 @@
-# Cleaning up my extension of the Ch2 exercise
+ # Cleaning up my extension of the Ch2 exercise
 # 31st Aug, 2022
 
 # Setting up a class to create dog objects
