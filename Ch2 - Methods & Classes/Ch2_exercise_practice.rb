@@ -47,3 +47,4 @@ lilly.fav_food = "Pork Belly"
 lilly.information
 lilly.noise
 lilly.move("Couch")
+lilly.noise
