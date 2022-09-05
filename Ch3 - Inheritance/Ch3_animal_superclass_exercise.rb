@@ -36,6 +36,12 @@ end
 
 # Setting up the various animal subclasses
 class Dog < Animal
+
+  # Overridding the to_s method from Animal (and higher, from Object)
+  def to_s
+    "#{@name} the dog, age #{@age}"
+  end
+  
 end
 
 class Bird < Animal
@@ -80,3 +86,8 @@ dillon.name = "Dillon"
 dillon.age = 5
 dillon.move("burrow")
 dillon.report_age
+
+
+puts Dog.superclass
+puts Animal.superclass
+puts lilly
