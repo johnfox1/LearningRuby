@@ -19,7 +19,7 @@ class Employee
     end
     @salary = salary
   end
-
+  
   def print_pay_stub
     pay_for_period = (@salary / 365) * 14
     pay_for_period_formatted = format("%.2f", pay_for_period)
@@ -33,3 +33,10 @@ kara_byrd = Employee.new
 kara_byrd.name = "Kara Byrd"
 kara_byrd.salary = 45000.00
 kara_byrd.print_pay_stub
+
+
+
+
+
+
+
