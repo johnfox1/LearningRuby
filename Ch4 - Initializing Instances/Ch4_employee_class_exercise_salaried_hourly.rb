@@ -38,7 +38,7 @@ class SalariedEmployee < Employee
   end
 
   def initialize(name = "Name not set", salary = 0.00)
-    self.name = name
+    super(name)
     self.salary = salary
   end
 
@@ -72,7 +72,7 @@ class HourlyEmployee < Employee
   end  
 
   def initialize(name = "Name not set", hourly_wage = 0.00, hours_per_week = 0.00)
-    self.name = name
+    super(name)
     self.hourly_wage = hourly_wage
     self.hours_per_week = hours_per_week
   end
