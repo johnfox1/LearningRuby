@@ -152,6 +152,12 @@ ivan_stokes = HourlyEmployee.cashier("Ivan Stokes")
 angela_matthews.print_pay_stub
 ivan_stokes.print_pay_stub
 
+# Initializing an instance of both SubClasses (Salaried & Hourly)
+# Leaving the name and pay arguments blank, to test initialize method in classes
+empty_salaried_employee = SalariedEmployee.new
+empty_salaried_employee.print_pay_stub
+empty_hourly_employee = HourlyEmployee.new
+empty_hourly_employee.print_pay_stub
 
 ###############################
 # Visual of the SuperClass / SubClass relationships
