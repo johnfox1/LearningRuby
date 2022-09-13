@@ -1,4 +1,4 @@
-# Ch1 - More exercises
+# Ch1 - More exercises on the HFR website
 # 26th August 2022
 
 ################################################
