@@ -27,3 +27,25 @@ p prices
 # Finding out the class of object of an array 
 puts prices.class
 puts prices.methods
+
+##################################
+
+# Ch5 Arrays and Blocks - Introduction Continued
+# 15th Sept, 2022
+
+# Example array
+prices = [2.99, 25.00, 8.99]
+
+# Looping through the array
+index = 0
+while index < prices.length
+  puts prices[index]
+  index += 1
+end
+
+# Commentary of looping through an array
+index = 0 #Starting at index 0 (i.e. the first element in the array).
+while index < prices.length #Setting up a while loop. Looping until the index number is equal to the number of elements in the array.
+  puts prices[index] #Printing the element at the current index value in the loop
+  index += 1 #Adding one to the index value, in order to progress through the array
+end
