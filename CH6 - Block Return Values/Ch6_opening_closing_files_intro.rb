@@ -23,4 +23,3 @@ File.open("Ch6_reviews.txt") do |file_as_array|
   lines = file_as_array.readlines
 end
 puts lines.length
-
