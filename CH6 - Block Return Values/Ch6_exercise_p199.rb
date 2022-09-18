@@ -25,3 +25,20 @@ sum = 0
 puts sum
 
 # output: 6
+
+
+############
+# Script 3
+# blank line
+# A text file, with 3 lines, as per the output
+
+File.open("sample.txt") do |file|
+    content = file.readlines
+end
+
+puts contents
+
+# output:
+# This is the first line in the file.
+# This is the second.
+# This is the last line.
