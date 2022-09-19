@@ -35,4 +35,3 @@ adjectives = reviews.map do |review|
 end
 p adjectives
 puts adjectives
-

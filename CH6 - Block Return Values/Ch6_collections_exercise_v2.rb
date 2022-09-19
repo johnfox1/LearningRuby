@@ -1,4 +1,4 @@
-# Ch6 Collections exercise - Intro to returning values from blocks
+# Ch6 Collections exercise - Returning values from blocks
 # 19th Sept, 2022
 
 # Opening and closing the file using the block method
