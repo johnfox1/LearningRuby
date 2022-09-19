@@ -1,4 +1,4 @@
-# Ch6 Collections exercise - Re-write adding full commentary
+# Ch6 Collections exercise - Re-writing based on requirements & output
 # 20th Sept, 2022
 
 #############
@@ -45,5 +45,3 @@ puts adjectives_formatted
 
 # Closing the reviews text file
 reviews_text_file.close 
-
-
