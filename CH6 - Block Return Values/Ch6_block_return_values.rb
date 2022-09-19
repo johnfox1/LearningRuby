@@ -25,10 +25,3 @@ reviews.each do |review|
   adjectives << find_adjective(review)
 end
 p adjectives
-
-
-
-
-
-
-
