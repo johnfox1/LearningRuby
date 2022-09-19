@@ -30,7 +30,8 @@ puts sum
 ############
 # Script 3
 # blank line
-# A text file, with 3 lines, as per the output
+contents = []
+# Plus a text file, with 3 lines, as per the output
 
 File.open("sample.txt") do |file|
     content = file.readlines
