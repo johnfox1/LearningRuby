@@ -10,21 +10,9 @@ end
 # Creating a new array (reviews), filtered for elements with the word "Truncated", and excluding elements containing "--"
 relevant_lines = []
 relevant_lines = lines.find_all { |line| line.include?("Truncated")}
+reviews = []
 reviews = relevant_lines.reject { |line| line.include?("--")}
-
-# Creating a method to convert array elements to strings, then calling the word after "is"
-def find_adjective(string)
-    words = string.split(" ")
-    index = words.find_index("is")
-    words[index + 1]
-end
-
-# Creating a block with the each method, to iterate through an array, executing the find_adjective method 
-adjectives = []
-reviews.each do |review|
-  adjectives << find_adjective(review)
-end
-p adjectives
+puts reviews # This is our filtered array
 
 
 
