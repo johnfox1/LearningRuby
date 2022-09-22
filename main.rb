@@ -6,20 +6,28 @@ lines = []
 File.open("Ch7_votes.txt") do |file|
   lines = file.readlines
 end
+# p lines
 
-puts lines
+# Setting up a hash to tally the votes
+votes = {} # Setting up an empty hash in preparation
+lines.each do |line| # Setting up a block to iterate through the lines array elements
+  name = line.chomp # Defining a variable (name), to be associated with each array element
+  if votes[name] != nil # if the name (the hash key) is not nil (i.e., it's already in the hash)
+    votes[name] += 1 # add 1 to it's value
+  else # else (i.e, the hash key is nil)
+    votes[name] = 1 # set the value against that hash key at 1
+  end
+end
 
-puts lines.count("Brian Martin\n")
+p votes
 
-#########################
-# My first hash (p228)
-elements = {"H" => "Hydrogen", "Li" => "Lithium"}
-# Hash name = { Key (hash rocket) Value, Key (hash rocket) Value}
-puts elements["H"]
-puts elements["Li"]
-
-# Adding a new key & value to a hash:
-elements["Ne"] = "Neon"
-
-p elements
-puts elements.class
+# Cleaning up this conditional to be default truthy (rather than having a nil falsy)
+votes = {}
+lines.each do |line|
+  name = line.chomp
+  if votes[name] # truthy conditional: testing to see if the hash key exists. If it doesn't, go to the else
+    votes[name] += 1
+  else
+    votes[name] = 1
+  end
+end
