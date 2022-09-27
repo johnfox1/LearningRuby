@@ -20,7 +20,7 @@ bodies = Hash.new do |hash, key| # Setting up a block (do). Creating a new hash 
   body = CelestialBody.new # Setting up a new object (body), which is an instance of the CelestialBody class
   body.type = "planet" # assigning the instance variable 'type' of the object to the string "planet"
   hash[key] = body # assigning the hash key as the 'body' object just created
-  body # Returns the body object 
+  # body # Returns the body object - I've just learned that this isn't required
 end
 
 bodies['Mars'].name = 'Mars'
