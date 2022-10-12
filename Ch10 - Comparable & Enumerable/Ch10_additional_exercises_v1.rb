@@ -1,4 +1,4 @@
-# Ch10 - Additional exercises on the HTF website
+# Ch10 - Additional exercises on the HTF website v1
 # 12th Oct, 2022
 
 class Grade
